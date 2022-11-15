@@ -1,0 +1,2 @@
+singleServerConfig:
+  address: "redis://tra-re-1petv46n2k1ox.tyfxs0.0001.euw1.cache.amazonaws.com:8080"

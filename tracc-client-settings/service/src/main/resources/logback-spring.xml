@@ -1,0 +1,17 @@
+<!-- logback-spring.xml -->
+<configuration>
+    <!-- on local use regular formatted logging -->
+    <springProfile name="local">
+        <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    </springProfile>
+
+    <!-- on non local environments, use json structured logging -->
+    <springProfile name="dev | stage | prod ">
+        <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+        </appender>
+        <root level="INFO">
+            <appender-ref ref="jsonConsoleAppender"/>
+        </root>
+    </springProfile>
+</configuration>
