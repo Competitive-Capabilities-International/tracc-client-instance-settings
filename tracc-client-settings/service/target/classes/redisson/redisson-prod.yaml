@@ -1,2 +1,0 @@
-singleServerConfig:
-  address: "redis://pro-re-voamrsylqx6x.0nntdf.0001.euw1.cache.amazonaws.com:8080"
