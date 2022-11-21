@@ -2,11 +2,11 @@
 -- Don't allow non super users to create objects in the public schema
 REVOKE ALL ON schema public FROM public;
 
-DROP USER IF EXISTS scaffold_app_user;
+DROP USER IF EXISTS tracc_client_instance_settings_app_user;
 -- replace 'password' with the password from keeper
-CREATE user scaffold_app_user WITH ENCRYPTED PASSWORD 'password';
+CREATE user tracc_client_instance_settings_app_user WITH ENCRYPTED PASSWORD 'password';
 
-CREATE SCHEMA IF NOT EXISTS scaffold;
-ALTER SCHEMA scaffold OWNER TO scaffold_app_user;
+CREATE SCHEMA IF NOT EXISTS tracc_client_instance_settings;
+ALTER SCHEMA tracc_client_instance_settings OWNER TO tracc_client_instance_settings_app_user;
 
 commit;
