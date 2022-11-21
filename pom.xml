@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.traccsolution.tracc_client_instance_settings</groupId>
+    <artifactId>tracc_client_instance_settings</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>tracc_client_instance_settings</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>service</module>
+        <module>client</module>
+    </modules>
+    <!-- repositories where maven may download artifacts from -->
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Competitive-Capabilities-International/tracc-maven-repo</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <!-- repositories where maven may upload artifacts to -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Competitive-Capabilities-International/tracc-maven-repo</url>
+        </repository>
+    </distributionManagement>
+</project>
