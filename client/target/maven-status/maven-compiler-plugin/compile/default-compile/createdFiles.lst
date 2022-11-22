@@ -1,1 +1,3 @@
 com\traccsolution\tracc_client_instance_settings\dto\ClientInstanceSettingsDto.class
+com\traccsolution\tracc_client_instance_settings\dto\ApiErrorDTO$ApiErrorDTOBuilder.class
+com\traccsolution\tracc_client_instance_settings\dto\ApiErrorDTO.class
